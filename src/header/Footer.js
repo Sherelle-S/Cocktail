@@ -1,11 +1,14 @@
 export default function Footer() {
+
+  const currentDate = new Date();
+  const year = currentDate.getFullYear()
   
     return (
         <div className="footer">
           <ul className="socials">
             <li className="selection">
               <a href="https://sherellescott.dev">
-              <i className="fa-solid fa-globe"> </i>sherellescott.dev</a>
+              <i className="fa-solid fa-globe"> </i> sherellescott.dev</a>
             </li>
             <li className="selection">
               <a href="https://www.linkedin.com/in/sherelle-scott"><i className="fa-brands fa-linkedin"></i></a>
@@ -15,7 +18,8 @@ export default function Footer() {
           </li>
             <li className="selection">
               <a href="https://twitter.com/sherellie1"><i className="fa-brands fa-square-twitter"></i></a>
-            </li>
+          </li>
+          <li className="Selection"><h6> Sherelle Copyright {`${year}`}</h6></li>
           </ul>
          </div>
       );

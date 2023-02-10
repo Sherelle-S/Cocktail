@@ -29,14 +29,3 @@ export default function SearchForm() {
    
   )
 }
-
-
-// return (
-//     <div>
-//     // <form onSubmit={() => {
-//     //   navigate(`/searchname/${word}`,{replace : true});
-//     // }}>
-//         
-//       </div>
-   
-//   )
