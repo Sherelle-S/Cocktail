@@ -2,7 +2,7 @@ import Header from '../header/Header'
 import Footer from '../header/Footer'
 import { NavLink } from 'react-router-dom'
 
-export default function FrontPage() {
+export default function Home() {
     return (
         <>
             <Header />

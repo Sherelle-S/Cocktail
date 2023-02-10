@@ -147,6 +147,11 @@ img {
   /* color: silver; */
   border-radius: 5px;
   text-align: center;
+  padding: 20px;
+}
+
+.card-list{
+  padding: 0;
 }
 /* ul {
   padding: 0.2rem;

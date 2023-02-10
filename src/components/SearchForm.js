@@ -1,28 +1,43 @@
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import { useNavigate } from 'react-router-dom'
 // import SearchName from "../pages/SearchName";
 
 
-export default function CocktailSearch() {
+export default function SearchForm() {
     
-  // const [word, setWord] = useState("");
+  const [word, setWord] = useState("");
+  console.log(word)
   // const navigate = useNavigate();
   return (
-    <></>
-    // <form onSubmit={() => {
-    //   navigate(`/searchname/${word}`,{replace : true});
-    // }}>
-    //   {/* <input
-    //     className="search-bar"
-    //     type="text"
-    //     placeholder="Search Ingredient"
-    //     onChange={(e) => {
-    //       setWord(e.target.value);
-    //     }}
-    //   />
-
-    //   <button className='drink selection'><i className="fa-solid fa-martini-glass-citrus"></i>
-    //   </button> */}
-    // </form>
+    <div>
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        console.log('hello from edit some shit')
+}}>
+        <input
+         className="search-bar"
+         type="text"
+         placeholder="Search Ingredient"
+         onChange={(e) => {
+           setWord(e.target.value);
+         }}
+        />
+        
+       <button className='drink selection'><i className="fa-solid fa-martini-glass-citrus"></i>
+      </button>
+      </form>
+      </div>
+   
   )
 }
+
+
+// return (
+//     <div>
+//     // <form onSubmit={() => {
+//     //   navigate(`/searchname/${word}`,{replace : true});
+//     // }}>
+//         
+//       </div>
+   
+//   )

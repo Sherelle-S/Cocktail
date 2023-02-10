@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react"
 import { Link } from "react-router-dom";
+import SearchForm from "../components/SearchForm";
 // import CocktailSearch from "./CocktailSearch";
  
 export default function Header() {
@@ -22,6 +23,7 @@ setRoulette(prevState => !prevState)
           </a>
         </li>
         <li className="selection">
+          <SearchForm />
           {/* <CocktailSearch /> */}
         </li>
       </ul>
