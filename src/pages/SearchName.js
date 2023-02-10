@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate, Link } from "react-router-dom";
 import CreateCard from "../components/CreateCard";
 import ImageCard from "../components/ImageCard";
 import Header from "../header/Header"
@@ -7,10 +8,14 @@ import Footer from "../header/Footer"
 export default function SearchName() {
     const [cocktail, setCocktail] = useState('');
     const [count, setCount] = useState(0);
-    const [limit, setLimit] = useState(0);
+  const [limit, setLimit] = useState(0);
+  const [word, setWord] = useState(false)
+  let { search } = useParams();
+  const navigate = useNavigate();
+  console.log(search)
 
     useEffect(() => {
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
             .then(res => res.json())
             .then(data => {
                 setCocktail(data.drinks[count])

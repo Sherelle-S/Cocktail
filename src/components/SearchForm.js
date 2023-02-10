@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 // import SearchName from "../pages/SearchName";
 
 
@@ -7,13 +7,12 @@ export default function SearchForm() {
     
   const [word, setWord] = useState("");
   console.log(word)
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div>
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        console.log('hello from edit some shit')
-}}>
+      <form onSubmit={() => {
+   navigate(`/searchname/${word}`,{replace : true});
+ }}>
         <input
          className="search-bar"
          type="text"

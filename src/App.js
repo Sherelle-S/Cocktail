@@ -14,8 +14,8 @@ function App() {
         {/* <Header /> */}
           <Routes>
           {/* <Route path='/roulette' element={<Roulette />} /> */}
-          <Route path='home' element={<Home />} />
-          <Route path='searchname' element={<SearchName />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/searchname/:search' element={<SearchName />} />
           {/* <Route path='/searchname' element={<SearchName />} /> */}
           {/* <Route path='/searchname/:search' element={<SearchName />} /> */}
           {/* <Route path='/notfound' element={<NotFound />} /> */}
