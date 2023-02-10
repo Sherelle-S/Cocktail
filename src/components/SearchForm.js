@@ -22,7 +22,7 @@ export default function SearchForm() {
          }}
         />
         
-       <button className='drink selection'><i className="fa-solid fa-martini-glass-citrus"></i>
+       <button className='search-drink selection'><i className="fa-solid fa-martini-glass-citrus"></i>
       </button>
       </form>
       </div>

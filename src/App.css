@@ -7,10 +7,6 @@ body {
   background-position: top;
 }
 
-.drink {
-  color: white;
-  padding: 1px;
-}
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -30,15 +26,14 @@ h1,h2,h3,h4,h5,h6,p, .card-list{
 h1,h2,h3,h4,h5,h6,p,li,span {
   font-family: "Commissioner", sans-serif;
 }
+
+
+/* Components */
 /* header footer */
 
 .nav-container{
   height: 70px;
   background-color: rgba(0, 0, 0, 0.9);
-}
-
-.roulette{
-  color: silver;
 }
 
 .search-bar {
@@ -75,29 +70,52 @@ h1,h2,h3,h4,h5,h6,p,li,span {
 margin-bottom: 0;
 font-size: 20px;
 }
-
+/* roulette */
+.roulette{
+  color: silver;
+}
 link{
   color: rgba(192, 192, 192, 0.596);
 }
 
-button {
+.search-drink {
   background-color: rgba(0, 0, 0, 0.2);
   /* border: none; */
   border-radius: 15px;
 }
 
-/* button and scroll container */
+.search-drink  {
+  color: white;
+  padding: 1px;
+}
+
+/* button and scroll container for search name api */
 
 .scroll-list{
   display: flex;
 justify-content: center;
-
 }
 
 .counter{
   padding: 15px;
 }
-/* main container */
+
+.direction{
+  height: 20px;
+  width: auto;
+  color: white;
+  padding: 20px;
+}
+/* home page */
+
+.Title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
+  padding: 45px 0;
+}
+
+/* main container for cards */
 .main-container {
   display: flex;
   align-items: center;
@@ -106,13 +124,6 @@ justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 15px;
-}
-
-.Title {
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 800;
-  padding: 45px 0;
 }
 
 /* image contianer */
@@ -126,12 +137,7 @@ img {
   border-radius: 5px;
 }
 
-.direction{
-  height: 20px;
-  width: auto;
-  color: white;
-  padding: 20px;
-}
+
 .image-container {
   width: 48%;
   text-align: center;
@@ -202,5 +208,16 @@ a:active {
 .selection:active {
   color: rgb(236, 232, 232);
 }
+/* pages */
+.notFound-container{
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 80%;
+  text-align: center;
+  margin: 10rem 5rem;
+  padding: 1rem;
+}
 
+
+.notFound-redirect{
+color: red;}
 
