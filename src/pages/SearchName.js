@@ -15,7 +15,7 @@ export default function SearchName() {
   let { search } = useParams();
   const navigate = useNavigate();
   const stopScroll = { visibility: 'hidden' };
-  console.log(search)
+  // console.log(search)
 
   useEffect(() => {
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
@@ -37,8 +37,8 @@ export default function SearchName() {
       .then(data => {
         setCocktail(data.drinks[count])
         setLimit(data.drinks.length)
-        console.log(cocktail)
-        console.log(data)
+        // console.log(cocktail)
+        // console.log(data)
       })
       .catch(err => {
         console.log(`error ${err}`)
@@ -52,16 +52,21 @@ export default function SearchName() {
   function scrollForward(){
     setCount(prevCount => prevCount + 1)
   }
-    console.log('yet???')
+    console.log(count)
     return (
                <>
         {/* <CocktailSearch /> */}
             <Header />
         <div className='scroll-container'>
           <ul className='scroll-list'>
-             <li className='scroll-left' onClick={scrollBack}> <i className="direction fa-solid fa-chevron-left selection"></i> </li>
+            
+              
+            
+          {count && count > 0 && (<li className='scroll-left scroll' onClick={scrollBack}><i className="direction fa-solid fa-chevron-left selection"></i></li>)}
+
             <h5 className='counter'>{count + 1}/{limit}</h5>
-          <li className='scroll-right' onClick={scrollForward}> <i className="direction fa-solid fa-chevron-right selection"></i> </li>
+          {count < limit-1 && (<li className='scroll-right scroll' onClick={scrollForward}> <i className="direction fa-solid fa-chevron-right selection"></i> </li>)}
+
           </ul>
               </div>
      <div className="main-container">
