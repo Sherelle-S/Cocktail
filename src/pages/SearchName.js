@@ -4,6 +4,7 @@ import CreateCard from "../components/CreateCard";
 import ImageCard from "../components/ImageCard";
 import Header from "../header/Header"
 import Footer from "../header/Footer"
+import NotFound from './NotFound';
 
 export default function SearchName() {
   const [cocktail, setCocktail] = useState('');
@@ -47,21 +48,18 @@ export default function SearchName() {
 
 
   const scrollBack = () => count === limit ? stopScroll :  setCount(prevCount => prevCount - 1)
-    
-
-  function scrollForward(){
-    setCount(prevCount => prevCount + 1)
-  }
-    console.log(count)
+  const scrollForward = () => setCount(prevCount => prevCount + 1)
+  
     return (
                <>
-        {/* <CocktailSearch /> */}
+
+        {limit === 0 && (<NotFound />)}
+        {error === true && (
+          <Link to="/frontpage"> Oops... Something went wrong, try again<i class="fa-solid fa-house selection"></i></Link>
+          )}
             <Header />
         <div className='scroll-container'>
           <ul className='scroll-list'>
-            
-              
-            
           {count && count > 0 && (<li className='scroll-left scroll' onClick={scrollBack}><i className="direction fa-solid fa-chevron-left selection"></i></li>)}
 
             <h5 className='counter'>{count + 1}/{limit}</h5>
@@ -70,12 +68,7 @@ export default function SearchName() {
           </ul>
               </div>
      <div className="main-container">
-        {/* <button className='drink selection' onClick={carousel}>emoji dink</button> */}
        
-          {/* <Add /> */}
-            
-       
-        {/* <button onClick={scrollForward}>right arrow </button> */}
         <ImageCard strDrinkThumb={cocktail.strDrinkThumb} />
         <CreateCard
           strDrink={cocktail.strDrink}
@@ -92,7 +85,6 @@ export default function SearchName() {
           strIngredient5={cocktail.strIngredient5}
         />
             </div>
-            {/* <CocktailSearch /> */}
   
           <Footer />
             </>

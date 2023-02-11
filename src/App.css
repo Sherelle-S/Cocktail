@@ -186,7 +186,7 @@ li {
 /* links and nav that highlight */
 
 a:link {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
 a:visited {
@@ -227,8 +227,17 @@ a:active {
 /* pages */
 .notFound-container{
   background-color: var(--not-found);
-  max-width: 80%;
+  max-width: 70%;
   text-align: center;
-  margin: 10rem 5rem;
+  margin: 15rem 15rem;
   padding: 1rem;
+}
+
+.notFound-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.notFound-text{
+  padding: 1rem 1rem 3rem 1rem;
 }

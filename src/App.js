@@ -19,12 +19,16 @@ function App() {
           {/* <Route path='/searchname' element={<SearchName />} /> */}
           {/* <Route path='/searchname/:search' element={<SearchName />} /> */}
           <Route path='/notfound' element={<NotFound />} />
-          {/* <Route path='*' element={<NotFound />}/> */}
-          </Routes>
-          
+          <Route path='*' element={<NotFound />}/>
+          </Routes>          
       </BrowserRouter>
+      
     </>
   );
 }
 
 export default App;
+// import { Route, Switch } from "react-router";
+
+
+
