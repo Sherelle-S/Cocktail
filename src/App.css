@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  background-repeat: none;
+  background-repeat: no-repeat;
   height: 100vh;
   background-image: url("https://res.cloudinary.com/dft0cktie/image/upload/v1656886504/giphy_du4oxx.gif");
   background-size: 100% auto;
