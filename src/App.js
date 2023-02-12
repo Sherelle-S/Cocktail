@@ -10,10 +10,10 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <>
-      <BrowserRouter> 
+      <BrowserRouter basename="/home"> 
           <Routes>
           <Route path='/roulette' element={<Roulette />} />
-          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
           <Route path='/searchname/:search' element={<SearchName />} />
           <Route path='/notfound' element={<NotFound />} />
           <Route path='*' element={<NotFound />}/>
