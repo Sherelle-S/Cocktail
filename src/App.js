@@ -11,13 +11,10 @@ function App() {
   return (
     <>
       <BrowserRouter> 
-        {/* <Header /> */}
           <Routes>
           <Route path='/roulette' element={<Roulette />} />
           <Route path='/' element={<Home />} />
           <Route path='/searchname/:search' element={<SearchName />} />
-          {/* <Route path='/searchname' element={<SearchName />} /> */}
-          {/* <Route path='/searchname/:search' element={<SearchName />} /> */}
           <Route path='/notfound' element={<NotFound />} />
           <Route path='*' element={<NotFound />}/>
           </Routes>          
@@ -26,9 +23,7 @@ function App() {
     </>
   );
 }
-
 export default App;
-// import { Route, Switch } from "react-router";
 
 
 
