@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sherelle-s.github.io/Cocktail.io/static/css/main.3024dd66.css",
+    "main.js": "/sherelle-s.github.io/Cocktail.io/static/js/main.3a6bd60e.js",
+    "index.html": "/sherelle-s.github.io/Cocktail.io/index.html",
+    "main.3024dd66.css.map": "/sherelle-s.github.io/Cocktail.io/static/css/main.3024dd66.css.map",
+    "main.3a6bd60e.js.map": "/sherelle-s.github.io/Cocktail.io/static/js/main.3a6bd60e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3024dd66.css",
+    "static/js/main.3a6bd60e.js"
+  ]
+}
