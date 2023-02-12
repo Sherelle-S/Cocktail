@@ -15,13 +15,16 @@ setRoulette(prevState => !prevState)
     <div className='nav-container'>
       <ul className="header">
         <li className="roulette">
-          <a href="/roulette"
+          <a href='/roulette'
             className="selection roulette"
-            onClick={() => window.location.reload(false)}
+            // onClick={() => window.location.reload(false)}
          >
             Play Roulette <i className="fa-solid fa-repeat"></i>
           </a>
         </li>
+                 <li className="roulette"><Link to='/'
+        className="selection"><i class="fa-solid fa-house"></i></Link></li>
+        
         <li className="selection">
           <SearchForm />
           {/* <CocktailSearch /> */}
