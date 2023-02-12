@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Cocktail.io/static/css/main.3024dd66.css",
-    "main.js": "/Cocktail.io/static/js/main.d968863f.js",
+    "main.css": "/Cocktail.io/static/css/main.e74ebacc.css",
+    "main.js": "/Cocktail.io/static/js/main.e021611d.js",
     "index.html": "/Cocktail.io/index.html",
-    "main.3024dd66.css.map": "/Cocktail.io/static/css/main.3024dd66.css.map",
-    "main.d968863f.js.map": "/Cocktail.io/static/js/main.d968863f.js.map"
+    "main.e74ebacc.css.map": "/Cocktail.io/static/css/main.e74ebacc.css.map",
+    "main.e021611d.js.map": "/Cocktail.io/static/js/main.e021611d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3024dd66.css",
-    "static/js/main.d968863f.js"
+    "static/css/main.e74ebacc.css",
+    "static/js/main.e021611d.js"
   ]
 }
