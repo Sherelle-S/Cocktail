@@ -55,7 +55,7 @@ export default function SearchName() {
 
         {limit === 0 && (<NotFound />)}
         {error === true && (
-          <Link to="/frontpage"> Oops... Something went wrong, try again<i class="fa-solid fa-house selection"></i></Link>
+          <Link to="/home"> Oops... Something went wrong, try again<i class="fa-solid fa-house selection"></i></Link>
           )}
             <Header />
         <div className='scroll-container'>
