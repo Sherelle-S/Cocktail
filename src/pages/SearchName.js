@@ -52,12 +52,12 @@ export default function SearchName() {
   
     return (
                <>
-
+        {/* {!limit === 0 && ()} */}
+        <Header />
         {limit === 0 && (<NotFound />)}
         {error === true && (
-          <Link to="/home"> Oops... Something went wrong, try again<i class="fa-solid fa-house selection"></i></Link>
+          <Link to="/home"> Oops... Something went wrong, try again<i className="fa-solid fa-house selection"></i></Link>
           )}
-            <Header />
         <div className='scroll-container'>
           <ul className='scroll-list'>
           {count && count > 0 && (<li className='scroll-left scroll' onClick={scrollBack}><i className="direction fa-solid fa-chevron-left selection"></i></li>)}

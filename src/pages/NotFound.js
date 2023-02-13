@@ -7,9 +7,9 @@ export default function NotFound() {
                 <br />  
                 Play Roulette Instead </h2>
             <ul className='notFound-list'>
-        <li> <Link to='/' className ='notFound-redirect selection'> <i class="fa-solid fa-magnifying-glass"></i>Search Another Drink </Link></li>
+        <li> <Link to='/' className ='notFound-redirect selection'> <i className="fa-solid fa-magnifying-glass"></i>Search Another Drink </Link></li>
         <br/>
-        <li><Link to='/roulette' className ='notFound-redirect selection'> <i className="fa-solid fa-whiskey-glass"></i>Play Roulette </Link> </li>
+        <li><Link to='/roulette' className ='notFound-redirect selection'> <i className="fa-solid fa-whiskey-glass"></i>Play Roulette </Link></li>
     </ul>
         </div>
     )

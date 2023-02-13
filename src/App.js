@@ -16,7 +16,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/searchname/:search' element={<SearchName />} />
           <Route path='/notfound' element={<NotFound />} />
-          <Route path='*' element={<NotFound />}/>
+          <Route path='*' element={<Home />}/>
           </Routes>          
       </BrowserRouter>
       

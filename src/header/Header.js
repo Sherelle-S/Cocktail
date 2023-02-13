@@ -11,23 +11,23 @@ const[roulette, setRoulette]=useState(true)
 setRoulette(prevState => !prevState)
   }
 
+  
+
   return (
     <div className='nav-container'>
       <ul className="header">
         <li className="roulette">
-          <a href='/roulette'
-            className="selection roulette"
+          <Link to='/roulette' className='roulette selection'
             // onClick={() => window.location.reload(false)}
-         >
-            Play Roulette <i className="fa-solid fa-repeat"></i>
-          </a>
+          >
+           Play Roulette <i className="fa-solid fa-repeat"></i>
+          </Link>
         </li>
                  <li className="roulette"><Link to='/'
-        className="selection"><i class="fa-solid fa-house"></i></Link></li>
+        className="selection"><i className="fa-solid fa-house"></i></Link></li>
         
         <li className="selection">
           <SearchForm />
-          {/* <CocktailSearch /> */}
         </li>
       </ul>
     </div>
